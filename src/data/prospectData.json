@@ -1,0 +1,1422 @@
+{
+  "dataset_name": "prospect materials",
+  "version": "1.0",
+  "created_at": "2026-09-17",
+  "record_count": 50,
+  "coverage_note": "Initial 50-record prototype batch concentrated in Utawala and adjacent Eastlands localities. Expand geographically before treating as representative of Nairobi Eastlands.",
+  "guardrails": {
+    "availability": "A live/public listing is not proof that the unit remains vacant. Reverify before presenting as confirmed available.",
+    "descriptions": "Do not republish full advertiser prose. This file uses normalized factual fields and generated summaries.",
+    "images": "Image URLs remain hosted by the source. Use for internal/prototype evaluation; do not mirror or claim ownership without permission/licensing.",
+    "source_attribution": "Every record retains its source URL and source name.",
+    "personal_data": "No seller phone numbers or private contact details are included.",
+    "quality": "Do not silently correct suspicious source values; flag them and recheck the original listing.",
+    "duplicates": "Deduplicate using source listing ID and source URL before ingesting future batches.",
+    "staleness": "Recheck listing status before user-facing display and expire stale records.",
+    "category_filter": "Exclude for-sale, commercial-only, already-let, or unrelated records from long-term residential search.",
+    "short_stay": "Keep short-let/Airbnb inventory in a separate category from monthly residential rentals."
+  },
+  "data_dictionary": {
+    "listing_id": "Identifier taken from the source listing URL.",
+    "evidence_level": "detail_page_verified means the individual listing page was resolved/opened during collection.",
+    "availability_status": "Advert currently listed; physical vacancy not independently confirmed.",
+    "primary_image_url": "Direct source-hosted primary image URL.",
+    "image_urls": "Array of source-hosted image references captured for the prototype.",
+    "source_description": "Original full source description; deliberately omitted here.",
+    "generated_summary": "Short original summary created from normalized fields.",
+    "content_rights": "How source-derived content is treated in this prototype.",
+    "data_quality_flags": "Warnings where a packaged field is unconfirmed or requires rechecking."
+  },
+  "listings": [
+    {
+      "index": 1,
+      "listing_id": "l8HlUGYHUDm8os5TCi6PHgiz",
+      "title": "2bdrm Apartment in Utawala, Off for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 30000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/65264397_NjIwLTgyNy0yYzhkZTg1YWYz.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/65264397_NjIwLTgyNy0yYzhkZTg1YWYz.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/2bdrm-apartment-in-utawala-off-for-rent-l8HlUGYHUDm8os5TCi6PHgiz.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Utawala, Off listed at KES 30,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 2,
+      "listing_id": "irZ0p9sLABJigbfk6w7zTiJ7",
+      "title": "5bdrm House in Astrol, Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "House",
+      "bedrooms": 5,
+      "rent_kes": 100000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/80222881_NjIwLTgyNy1iZTZmNTMxN2EzLTE.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/80222881_NjIwLTgyNy1iZTZmNTMxN2EzLTE.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/5bdrm-house-in-astrol-utawala-for-rent-irZ0p9sLABJigbfk6w7zTiJ7.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "5bdrm House in Astrol, Utawala listed at KES 100,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 3,
+      "listing_id": "p1nTaSUm6rMx0x1wpVbmY8Y4",
+      "title": "5bdrm Maisonette in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Maisonette",
+      "bedrooms": 5,
+      "rent_kes": 90000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/85124751_NjIwLTExMDItYjAzNWEzMDY1MA.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/85124751_NjIwLTExMDItYjAzNWEzMDY1MA.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/5bdrm-maisonette-in-utawala-for-rent-p1nTaSUm6rMx0x1wpVbmY8Y4.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "5bdrm Maisonette in Utawala listed at KES 90,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 4,
+      "listing_id": "i8PKmsUIF0kQCXOQQykEZgVh",
+      "title": "2bdrm Apartment in Utawala Astrol for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 28000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/85432210_NjIwLTQ2NS1lM2U5NDA4MDA0.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/85432210_NjIwLTQ2NS1lM2U5NDA4MDA0.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/2bdrm-apartment-in-utawala-astrol-for-rent-i8PKmsUIF0kQCXOQQykEZgVh.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Utawala Astrol listed at KES 28,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 5,
+      "listing_id": "zcbcn1ZKsKjecNtNvLzAjPQe",
+      "title": "2bdrm Apartment in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 25000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/50003510_NjIwLTgyNy0zMmM5ZTUwN2I0.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/50003510_NjIwLTgyNy0zMmM5ZTUwN2I0.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/2bdrm-apartment-in-utawala-for-rent-zcbcn1ZKsKjecNtNvLzAjPQe.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Utawala listed at KES 25,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 6,
+      "listing_id": "sHHaUJAjFR29L3YYqfCd9xqf",
+      "title": "3bdrm Bungalow in Airways, Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Bungalow",
+      "bedrooms": 3,
+      "rent_kes": 50000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/86791973_NjIwLTExMDItMDBiMWJlNDI5Mw.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/86791973_NjIwLTExMDItMDBiMWJlNDI5Mw.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/3bdrm-bungalow-in-airways-utawala-for-rent-sHHaUJAjFR29L3YYqfCd9xqf.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "3bdrm Bungalow in Airways, Utawala listed at KES 50,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 7,
+      "listing_id": "BKmJimUj3U66nHGRDtonOgv6",
+      "title": "2bdrm Apartment in Astrol Area, Complex Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 35000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/69021251_NjIwLTgyNy0zY2FlZTc5MjFk.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/69021251_NjIwLTgyNy0zY2FlZTc5MjFk.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/2bdrm-apartment-in-astrol-area-complex-utawala-for-rent-BKmJimUj3U66nHGRDtonOgv6.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Astrol Area, Complex Utawala listed at KES 35,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 8,
+      "listing_id": "rfq3wKOHGDDhDDRo0AJ6sjsF",
+      "title": "2bdrm Apartment in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 35000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/68875600_NjIwLTQ2NS1jYjQ2ZTAzMWYz.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/68875600_NjIwLTQ2NS1jYjQ2ZTAzMWYz.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/2bdrm-apartment-in-utawala-for-rent-rfq3wKOHGDDhDDRo0AJ6sjsF.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Utawala listed at KES 35,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 9,
+      "listing_id": "CqbtdB0ZsbA95uTTho3chFIQ",
+      "title": "5bdrm Mansion in Capital Hill, Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Mansion",
+      "bedrooms": 5,
+      "rent_kes": 110000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/81731004_NjIwLTQ2NS02OTgzYmJhNmI2LTE.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/81731004_NjIwLTQ2NS02OTgzYmJhNmI2LTE.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/5bdrm-mansion-in-capital-hill-utawala-for-rent-CqbtdB0ZsbA95uTTho3chFIQ.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "5bdrm Mansion in Capital Hill, Utawala listed at KES 110,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 10,
+      "listing_id": "wqwfy0o0in5IplFTTJrRG2EC",
+      "title": "1bdrm Apartment in Astrol Area, Complex Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 1,
+      "rent_kes": 25000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/68888866_NjIwLTgyMy05NGZjOWRhNTBh.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/68888866_NjIwLTgyMy05NGZjOWRhNTBh.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/1bdrm-apartment-in-astrol-area-complex-utawala-for-rent-wqwfy0o0in5IplFTTJrRG2EC.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Apartment in Astrol Area, Complex Utawala listed at KES 25,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 11,
+      "listing_id": "kG3dlCJMOlig2vQD2fQ5cNn8",
+      "title": "2bdrm Apartment in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 30000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/70275741_NjIwLTYyMC00M2MyMjhlN2Q5.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/70275741_NjIwLTYyMC00M2MyMjhlN2Q5.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/2bdrm-apartment-in-utawala-for-rent-kG3dlCJMOlig2vQD2fQ5cNn8.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Utawala listed at KES 30,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 12,
+      "listing_id": "hjhHp1lA1p3jHyAgqgrJjl2Y",
+      "title": "4bdrm House in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "House",
+      "bedrooms": 4,
+      "rent_kes": 65000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/86751145_NjIwLTgyNy0wZTFlZWJkNTdj.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/86751145_NjIwLTgyNy0wZTFlZWJkNTdj.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/4bdrm-house-in-utawala-for-rent-hjhHp1lA1p3jHyAgqgrJjl2Y.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "4bdrm House in Utawala listed at KES 65,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 13,
+      "listing_id": "yoVEN6ARVyzijvjBtwDXgzTE",
+      "title": "2bdrm Apartment in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 37000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/70941326_NjIwLTgyNy0zZDQzZDRjMmUx.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/70941326_NjIwLTgyNy0zZDQzZDRjMmUx.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/2bdrm-apartment-in-utawala-for-rent-yoVEN6ARVyzijvjBtwDXgzTE.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Utawala listed at KES 37,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 14,
+      "listing_id": "eYa4aLlZVhk2fVTbJvFbRMaE",
+      "title": "1bdrm Apartment in Utawala, Junction/Benedicta for rent",
+      "city": "Nairobi",
+      "area": "Junction/Benedicta",
+      "property_type": "Apartment",
+      "bedrooms": 1,
+      "rent_kes": 13500,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/72148100_NjIwLTExMDItZjYyNDIyODdjZQ.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/72148100_NjIwLTExMDItZjYyNDIyODdjZQ.webp"
+      ],
+      "source_url": "https://jiji.co.ke/junction-benedicta/houses-apartments-for-rent/1bdrm-apartment-in-utawala-junction-benedicta-for-rent-eYa4aLlZVhk2fVTbJvFbRMaE.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Apartment in Utawala, Junction/Benedicta listed at KES 13,500 per month in Junction/Benedicta.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 15,
+      "listing_id": "iUmnLSa5DTqIjnnajJZWqTuM",
+      "title": "1bdrm Apartment in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 1,
+      "rent_kes": 15000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/80008088_NjIwLTgyNy02NzZlNWI4OTMw.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/80008088_NjIwLTgyNy02NzZlNWI4OTMw.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/1bdrm-apartment-in-utawala-for-rent-iUmnLSa5DTqIjnnajJZWqTuM.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Apartment in Utawala listed at KES 15,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 16,
+      "listing_id": "hcdzTbcntwcCRo5rSaAhNpKl",
+      "title": "2bdrm Apartment in Utawala Mihango for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 30000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/42670333_NjIwLTgyNy1iMThkY2VjMWQ0.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/42670333_NjIwLTgyNy1iMThkY2VjMWQ0.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/2bdrm-apartment-in-utawala-mihango-for-rent-hcdzTbcntwcCRo5rSaAhNpKl.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Utawala Mihango listed at KES 30,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 17,
+      "listing_id": "yB9U3fiMbuloP8iSv9ItP5m",
+      "title": "1bdrm Apartment in 83 Park Court, Complex Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 1,
+      "rent_kes": 18000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/57345618_NjIwLTgyNy00NTMwYmU4ZjUy.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/57345618_NjIwLTgyNy00NTMwYmU4ZjUy.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/1bdrm-apartment-in-83-park-court-complex-utawala-for-rent-yB9U3fiMbuloP8iSv9ItP5m.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Apartment in 83 Park Court, Complex Utawala listed at KES 18,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 18,
+      "listing_id": "2QPU9O7XJGdOWiKVztvqr7s7",
+      "title": "1bdrm Apartment in Utawala Shooters for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 1,
+      "rent_kes": 22000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/85064531_NjIwLTEzNDItZWVjMGI2OWYyNA.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/85064531_NjIwLTEzNDItZWVjMGI2OWYyNA.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/1bdrm-apartment-in-utawala-shooters-for-rent-2QPU9O7XJGdOWiKVztvqr7s7.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Apartment in Utawala Shooters listed at KES 22,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 19,
+      "listing_id": "AS6c4muBDbV4KahwcDvSrjUX",
+      "title": "4bdrm Townhouse / Terrace in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Townhouse / Terrace",
+      "bedrooms": 4,
+      "rent_kes": 60000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/80302314_NjIwLTQ2NS0xOThhY2M2ZmM2.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/80302314_NjIwLTQ2NS0xOThhY2M2ZmM2.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/4bdrm-townhouse-terrace-in-utawala-for-rent-AS6c4muBDbV4KahwcDvSrjUX.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "4bdrm Townhouse / Terrace in Utawala listed at KES 60,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 20,
+      "listing_id": "uaSp3cR0vAWGpkqPpMFAZZsl",
+      "title": "1bdrm Apartment in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 1,
+      "rent_kes": 15000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/77825718_NjIwLTYyMC1jOTZmNGNlM2I3.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/77825718_NjIwLTYyMC1jOTZmNGNlM2I3.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/1bdrm-apartment-in-utawala-for-rent-uaSp3cR0vAWGpkqPpMFAZZsl.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Apartment in Utawala listed at KES 15,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 21,
+      "listing_id": "rW6tRmB7KH7sYTjGq2Trt8UO",
+      "title": "2bdrm Apartment in Complex Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 35000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/85064139_NjIwLTEyMjQtYTU3Njk1OGMwNA.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/85064139_NjIwLTEyMjQtYTU3Njk1OGMwNA.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/2bdrm-apartment-in-complex-utawala-for-rent-rW6tRmB7KH7sYTjGq2Trt8UO.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Complex Utawala listed at KES 35,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 22,
+      "listing_id": "mjXNK5S5bnHBM2nswHLLd7YU",
+      "title": "1bdrm Apartment in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 1,
+      "rent_kes": 23000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/78715250_NjIwLTgyNy1hNzliOWY1NDNl.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/78715250_NjIwLTgyNy1hNzliOWY1NDNl.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/1bdrm-apartment-in-utawala-for-rent-mjXNK5S5bnHBM2nswHLLd7YU.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Apartment in Utawala listed at KES 23,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 23,
+      "listing_id": "43weRMtuqQw9XN62W59NmDCZ",
+      "title": "1bdrm Apartment in Utawala Astrol for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 1,
+      "rent_kes": 23000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/84450955_NjIwLTY4NC03MGYyMjk1YmFk.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/84450955_NjIwLTY4NC03MGYyMjk1YmFk.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/1bdrm-apartment-in-utawala-astrol-for-rent-43weRMtuqQw9XN62W59NmDCZ.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Apartment in Utawala Astrol listed at KES 23,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 24,
+      "listing_id": "1amchxC0SamdSE2f2CMv8enL",
+      "title": "5bdrm Maisonette in Complex Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Maisonette",
+      "bedrooms": 5,
+      "rent_kes": 65000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/86873760_NjIwLTQ2Ni0yYWEyNmExMjU4.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/86873760_NjIwLTQ2Ni0yYWEyNmExMjU4.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/5bdrm-maisonette-in-complex-utawala-for-rent-1amchxC0SamdSE2f2CMv8enL.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "5bdrm Maisonette in Complex Utawala listed at KES 65,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 25,
+      "listing_id": "kW5otHJqDhenY7PAJCBt6bnm",
+      "title": "2bdrm Apartment in Take Off View for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 16000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/43913649_NjIwLTQ2NS1lNzk1NjRjNGI1.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/43913649_NjIwLTQ2NS1lNzk1NjRjNGI1.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/2bdrm-apartment-in-take-off-view-for-rent-kW5otHJqDhenY7PAJCBt6bnm.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Take Off View listed at KES 16,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 26,
+      "listing_id": "8HIIqH437BASWkY4BKTlx9Fb",
+      "title": "2bdrm Bungalow in Githunguri for rent",
+      "city": "Nairobi",
+      "area": "Githunguri Area",
+      "property_type": "Bungalow",
+      "bedrooms": 2,
+      "rent_kes": 25000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/87853033_NjIwLTQ2NS0zODU2ZjBiNTA4.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/87853033_NjIwLTQ2NS0zODU2ZjBiNTA4.webp"
+      ],
+      "source_url": "https://jiji.co.ke/githunguri-area/houses-apartments-for-rent/2bdrm-bungalow-in-githunguri-for-rent-8HIIqH437BASWkY4BKTlx9Fb.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Bungalow in Githunguri listed at KES 25,000 per month in Githunguri Area.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 27,
+      "listing_id": "3WzWX3SjrkFrzcNN6EgsLYJV",
+      "title": "5bdrm House in Kincar, Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "House",
+      "bedrooms": 5,
+      "rent_kes": 60000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/86751245_NjIwLTExMDItMmYxZjdlMGZjOA.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/86751245_NjIwLTExMDItMmYxZjdlMGZjOA.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/5bdrm-house-in-kincar-utawala-for-rent-3WzWX3SjrkFrzcNN6EgsLYJV.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "5bdrm House in Kincar, Utawala listed at KES 60,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 28,
+      "listing_id": "wPChqN8ZTyLhfdx1pumwFtnn",
+      "title": "2bdrm Apartment in Kigwathi, Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 38000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/73394356_NjIwLTQ2NS04MzNkNmY3M2Iz.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/73394356_NjIwLTQ2NS04MzNkNmY3M2Iz.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/2bdrm-apartment-in-kigwathi-utawala-for-rent-wPChqN8ZTyLhfdx1pumwFtnn.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Kigwathi, Utawala listed at KES 38,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 29,
+      "listing_id": "9RCCBxheE0XarL7UANJMD7zg",
+      "title": "1bdrm Apartment in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 1,
+      "rent_kes": 23000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/83446133_NjIwLTgyNy00ZjYzODZmYjgy.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/83446133_NjIwLTgyNy00ZjYzODZmYjgy.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/1bdrm-apartment-in-utawala-for-rent-9RCCBxheE0XarL7UANJMD7zg.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Apartment in Utawala listed at KES 23,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 30,
+      "listing_id": "k2Yy9kIET0WyLbTyKSnzuBhD",
+      "title": "Furnished 2bdrm Maisonette in Arusha Court, Complex Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Maisonette",
+      "bedrooms": 2,
+      "rent_kes": 18000,
+      "billing_period": "month",
+      "furnishing": "Furnished",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/86639345_NjIwLTQ2NS03NDNiNDM0ZmU1.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/86639345_NjIwLTQ2NS03NDNiNDM0ZmU1.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/furnished-2bdrm-maisonette-in-arusha-court-complex-utawala-for-rent-k2Yy9kIET0WyLbTyKSnzuBhD.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "Furnished 2bdrm Maisonette in Arusha Court, Complex Utawala listed at KES 18,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": []
+    },
+    {
+      "index": 31,
+      "listing_id": "eJK83ozYHWHUUkCcn7o09WaV",
+      "title": "4bdrm Maisonette in Airways, Complex Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Maisonette",
+      "bedrooms": 4,
+      "rent_kes": 55000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/87767529_NjIwLTgyNy02MGQ5NTY4ZDRm.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/87767529_NjIwLTgyNy02MGQ5NTY4ZDRm.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/4bdrm-maisonette-in-airways-complex-utawala-for-rent-eJK83ozYHWHUUkCcn7o09WaV.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "4bdrm Maisonette in Airways, Complex Utawala listed at KES 55,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 32,
+      "listing_id": "yFi8r03qOHktOtka3osskwfb",
+      "title": "2bdrm Apartment in Junction/Benedicta for rent",
+      "city": "Nairobi",
+      "area": "Junction/Benedicta",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 16500,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/6635857_20200211-151517_620x496.jpg",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/6635857_20200211-151517_620x496.jpg"
+      ],
+      "source_url": "https://jiji.co.ke/junction-benedicta/houses-apartments-for-rent/2bdrm-apartment-in-junction-benedicta-for-rent-yFi8r03qOHktOtka3osskwfb.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Junction/Benedicta listed at KES 16,500 per month in Junction/Benedicta.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 33,
+      "listing_id": "XUs25LQkNCVqnis7LUp0ser",
+      "title": "Furnished 2bdrm Apartment in Utawala Rentals for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 25000,
+      "billing_period": "month",
+      "furnishing": "Furnished",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/71169008_NjIwLTgyNy1iMDViOTUwYmVlLTE.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/71169008_NjIwLTgyNy1iMDViOTUwYmVlLTE.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/furnished-2bdrm-apartment-in-utawala-rentals-for-rent-XUs25LQkNCVqnis7LUp0ser.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "Furnished 2bdrm Apartment in Utawala Rentals listed at KES 25,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": []
+    },
+    {
+      "index": 34,
+      "listing_id": "BDLglRE5gwme3mlCFK2Q4vSg",
+      "title": "3bdrm Apartment in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 3,
+      "rent_kes": 40000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/81281439_NjIwLTkwNS0wMzBlNzI3ODAx.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/81281439_NjIwLTkwNS0wMzBlNzI3ODAx.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/3bdrm-apartment-in-utawala-for-rent-BDLglRE5gwme3mlCFK2Q4vSg.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "3bdrm Apartment in Utawala listed at KES 40,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 35,
+      "listing_id": "pRerb1wk2X702Om7C2chzpvO",
+      "title": "1bdrm Apartment in River Close Estate, Complex Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 1,
+      "rent_kes": 23000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/83474590_NjIwLTExMDItYTZjZTJhNzgxOQ.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/83474590_NjIwLTExMDItYTZjZTJhNzgxOQ.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/1bdrm-apartment-in-river-close-estate-complex-utawala-for-rent-pRerb1wk2X702Om7C2chzpvO.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Apartment in River Close Estate, Complex Utawala listed at KES 23,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 36,
+      "listing_id": "hm03Hf5bUb85RusP7kcLmwY5",
+      "title": "1bdrm Bedsitter in Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Bedsitter",
+      "bedrooms": 1,
+      "rent_kes": 12500,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/70940216_NjIwLTg1NC1jNTk0MjNjZjU2.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/70940216_NjIwLTg1NC1jNTk0MjNjZjU2.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/1bdrm-bedsitter-in-utawala-for-rent-hm03Hf5bUb85RusP7kcLmwY5.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Bedsitter in Utawala listed at KES 12,500 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 37,
+      "listing_id": "aReTzD0M8bpejqbUQuPnWK4P",
+      "title": "1bdrm Maisonette in Arusha Court, Complex Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Maisonette",
+      "bedrooms": 1,
+      "rent_kes": 14000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/86665257_NjIwLTQ2NS1mMmE1MzQ1YmZk.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/86665257_NjIwLTQ2NS1mMmE1MzQ1YmZk.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/1bdrm-maisonette-in-arusha-court-complex-utawala-for-rent-aReTzD0M8bpejqbUQuPnWK4P.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Maisonette in Arusha Court, Complex Utawala listed at KES 14,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 38,
+      "listing_id": "CeY1rZ1l5FgfxHRusOPi7yCr",
+      "title": "2bdrm Apartment in Mihango, Junction/Benedicta for rent",
+      "city": "Nairobi",
+      "area": "Junction/Benedicta",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 25000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/87655744_NjIwLTgyNy1hOWExODM2OGFi.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/87655744_NjIwLTgyNy1hOWExODM2OGFi.webp"
+      ],
+      "source_url": "https://jiji.co.ke/junction-benedicta/houses-apartments-for-rent/2bdrm-apartment-in-mihango-junction-benedicta-for-rent-CeY1rZ1l5FgfxHRusOPi7yCr.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Mihango, Junction/Benedicta listed at KES 25,000 per month in Junction/Benedicta.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 39,
+      "listing_id": "zG4sgOLmrRmhnfsvh30nXUQ",
+      "title": "2bdrm Apartment in Junction/Benedicta for rent",
+      "city": "Nairobi",
+      "area": "Junction/Benedicta",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 16000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/6732109__620x827.jpg",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/6732109__620x827.jpg"
+      ],
+      "source_url": "https://jiji.co.ke/junction-benedicta/houses-apartments-for-rent/2bdrm-apartment-in-junction-benedicta-for-rent-zG4sgOLmrRmhnfsvh30nXUQ.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Junction/Benedicta listed at KES 16,000 per month in Junction/Benedicta.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 40,
+      "listing_id": "rAw81F0b6Gc9fBucAzhMl91D",
+      "title": "Furnished 2bdrm Apartment in Jane Apartment, Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 30000,
+      "billing_period": "month",
+      "furnishing": "Furnished",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/73190748_NjIwLTgyNy1jZDQyNDgzN2FmLTE.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/73190748_NjIwLTgyNy1jZDQyNDgzN2FmLTE.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/furnished-2bdrm-apartment-in-jane-apartment-utawala-for-rent-rAw81F0b6Gc9fBucAzhMl91D.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "Furnished 2bdrm Apartment in Jane Apartment, Utawala listed at KES 30,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": []
+    },
+    {
+      "index": 41,
+      "listing_id": "71JWH35XnZvQcFuiebqcB1b",
+      "title": "1bdrm Block of Flats in Capital Hill, Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Block of Flats",
+      "bedrooms": 1,
+      "rent_kes": 15000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/36941936_NjIwLTgyNC01YmY2NjQ5NmZm.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/36941936_NjIwLTgyNC01YmY2NjQ5NmZm.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/1bdrm-block-of-flats-in-capital-hill-utawala-for-rent-71JWH35XnZvQcFuiebqcB1b.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Block of Flats in Capital Hill, Utawala listed at KES 15,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 42,
+      "listing_id": "gjjwQ5YkTnzJJsgpWZtoqmch",
+      "title": "2bdrm Apartment in Corradin, Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 28000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/87279593_NjIwLTgyNy03OWQ3NmRkMGEy.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/87279593_NjIwLTgyNy03OWQ3NmRkMGEy.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/2bdrm-apartment-in-corradin-utawala-for-rent-gjjwQ5YkTnzJJsgpWZtoqmch.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Corradin, Utawala listed at KES 28,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 43,
+      "listing_id": "A4VApdXVwAOMIuhBJggPsJAx",
+      "title": "Furnished 1bdrm House in Githunguri Flat for rent",
+      "city": "Nairobi",
+      "area": "Githunguri Area",
+      "property_type": "House",
+      "bedrooms": 1,
+      "rent_kes": 13000,
+      "billing_period": "month",
+      "furnishing": "Furnished",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/86224283_NjIwLTQ2NS05NGI1ZDYyZGRl.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/86224283_NjIwLTQ2NS05NGI1ZDYyZGRl.webp"
+      ],
+      "source_url": "https://jiji.co.ke/githunguri-area/houses-apartments-for-rent/furnished-1bdrm-house-in-githunguri-flat-for-rent-A4VApdXVwAOMIuhBJggPsJAx.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "Furnished 1bdrm House in Githunguri Flat listed at KES 13,000 per month in Githunguri Area.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": []
+    },
+    {
+      "index": 44,
+      "listing_id": "8LUqIRhev2GqTvtzc12dwF1B",
+      "title": "Furnished 2bdrm Shared Apartment in Complex Utawala for rent",
+      "city": "Nairobi",
+      "area": "Complex Utawala",
+      "property_type": "Shared Apartment",
+      "bedrooms": 2,
+      "rent_kes": 30000,
+      "billing_period": "month",
+      "furnishing": "Furnished",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/83991489_NjIwLTQxMS02ZjM2NmIwNDI0.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/83991489_NjIwLTQxMS02ZjM2NmIwNDI0.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala-complex/houses-apartments-for-rent/furnished-2bdrm-shared-apartment-in-complex-utawala-for-rent-8LUqIRhev2GqTvtzc12dwF1B.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "Furnished 2bdrm Shared Apartment in Complex Utawala listed at KES 30,000 per month in Complex Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": []
+    },
+    {
+      "index": 45,
+      "listing_id": "b2ELxVPPWtvo0laT8pxVuFP",
+      "title": "1bdrm Apartment in Junction/Benedicta for rent",
+      "city": "Nairobi",
+      "area": "Junction/Benedicta",
+      "property_type": "Apartment",
+      "bedrooms": 1,
+      "rent_kes": 18000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/84084414_NjIwLTgyNy1jZGY2MTk4NDE2.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/84084414_NjIwLTgyNy1jZGY2MTk4NDE2.webp"
+      ],
+      "source_url": "https://jiji.co.ke/junction-benedicta/houses-apartments-for-rent/1bdrm-apartment-in-junction-benedicta-for-rent-b2ELxVPPWtvo0laT8pxVuFP.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "1bdrm Apartment in Junction/Benedicta listed at KES 18,000 per month in Junction/Benedicta.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 46,
+      "listing_id": "k7sfr0ziNF2qOsJjoYA9q52t",
+      "title": "2bdrm Apartment in Nawili Court-, Junction/Benedicta for rent",
+      "city": "Nairobi",
+      "area": "Junction/Benedicta",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 19000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/31675951_NjIwLTQ2NS0zNDIyYTk3ZWRi.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/31675951_NjIwLTQ2NS0zNDIyYTk3ZWRi.webp"
+      ],
+      "source_url": "https://jiji.co.ke/junction-benedicta/houses-apartments-for-rent/2bdrm-apartment-in-nawili-court-junction-benedicta-for-rent-k7sfr0ziNF2qOsJjoYA9q52t.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Nawili Court-, Junction/Benedicta listed at KES 19,000 per month in Junction/Benedicta.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 47,
+      "listing_id": "6xcBlkQpnXk9yM9sfkF7BLne",
+      "title": "2bdrm House in Charles, Junction/Benedicta for rent",
+      "city": "Nairobi",
+      "area": "Junction/Benedicta",
+      "property_type": "House",
+      "bedrooms": 2,
+      "rent_kes": 30000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/87788462_NjIwLTExMDItYWYwMTRkZjFkOA.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/87788462_NjIwLTExMDItYWYwMTRkZjFkOA.webp"
+      ],
+      "source_url": "https://jiji.co.ke/junction-benedicta/houses-apartments-for-rent/2bdrm-house-in-charles-junction-benedicta-for-rent-6xcBlkQpnXk9yM9sfkF7BLne.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm House in Charles, Junction/Benedicta listed at KES 30,000 per month in Junction/Benedicta.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 48,
+      "listing_id": "5hwzpmGBu0xUsx2pQd3qOfdd",
+      "title": "4bdrm Maisonette in Dhahabu, Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Maisonette",
+      "bedrooms": 4,
+      "rent_kes": 45000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/87520336_NjIwLTgyNy01ZTY3ZjZhNmU0.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/87520336_NjIwLTgyNy01ZTY3ZjZhNmU0.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/4bdrm-maisonette-in-dhahabu-utawala-for-rent-5hwzpmGBu0xUsx2pQd3qOfdd.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "4bdrm Maisonette in Dhahabu, Utawala listed at KES 45,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 49,
+      "listing_id": "wKeQzhcLivNbaO8T2OAX0yN5",
+      "title": "2bdrm Apartment in Tendo Estate, Utawala for rent",
+      "city": "Nairobi",
+      "area": "Utawala",
+      "property_type": "Apartment",
+      "bedrooms": 2,
+      "rent_kes": 30000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/82364146_NjIwLTQ2NS0wZTJiMzEyNzEy.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/82364146_NjIwLTQ2NS0wZTJiMzEyNzEy.webp"
+      ],
+      "source_url": "https://jiji.co.ke/utawala/houses-apartments-for-rent/2bdrm-apartment-in-tendo-estate-utawala-for-rent-wKeQzhcLivNbaO8T2OAX0yN5.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "2bdrm Apartment in Tendo Estate, Utawala listed at KES 30,000 per month in Utawala.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    },
+    {
+      "index": 50,
+      "listing_id": "ClJv3ktnPBYnPrnY2JXYYRiy",
+      "title": "5bdrm Maisonette in Near Petunia School, Junction/Benedicta for rent",
+      "city": "Nairobi",
+      "area": "Junction/Benedicta",
+      "property_type": "Maisonette",
+      "bedrooms": 5,
+      "rent_kes": 60000,
+      "billing_period": "month",
+      "furnishing": "Unknown",
+      "primary_image_url": "https://pictures-kenya.jijistatic.com/87104920_NjIwLTEzNzgtYmM4NjQyODdhNg.webp",
+      "image_urls": [
+        "https://pictures-kenya.jijistatic.com/87104920_NjIwLTEzNzgtYmM4NjQyODdhNg.webp"
+      ],
+      "source_url": "https://jiji.co.ke/junction-benedicta/houses-apartments-for-rent/5bdrm-maisonette-in-near-petunia-school-junction-benedicta-for-rent-ClJv3ktnPBYnPrnY2JXYYRiy.html",
+      "source": "Jiji",
+      "evidence_level": "detail_page_verified",
+      "checked_at": "2026-09-17",
+      "availability_status": "listed_on_source_not_independently_confirmed",
+      "source_description": null,
+      "generated_summary": "5bdrm Maisonette in Near Petunia School, Junction/Benedicta listed at KES 60,000 per month in Junction/Benedicta.",
+      "content_rights": "normalized_facts_and_links_only",
+      "image_display_policy": "source_hosted_prototype_reference_do_not_rehost_without_permission",
+      "data_quality_flags": [
+        "furnishing_not_confirmed_in_packaged_record"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Nairobi House Hunting AI - Agent & Vacancy Intelligence",
+  "description": "Hyper-local Nairobi rental platform featuring automated agent vacancy scraping, direct caretaker intake, interactive spatial transit map view, and AI tenant concierge with True Cost of Occupancy (TCO).",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
