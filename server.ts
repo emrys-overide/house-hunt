@@ -80,30 +80,9 @@ app.get('/api/listings', (req, res) => {
 });
 
 // 3. Automated Caretaker Availability Verification ("Bado iko vacant?")
-app.post('/api/listings/verify', (req, res) => {
-  const { listingId, status } = req.body;
-  const listingIndex = listings.findIndex((l) => l.id === listingId);
-
-  if (listingIndex === -1) {
-    return res.status(404).json({ error: 'Listing not found' });
-  }
-
-  const isStillVacant = status !== 'occupied';
-  listings[listingIndex].vacancyStatus = {
-    ...listings[listingIndex].vacancyStatus,
-    isVacant: isStillVacant,
-    lastVerifiedAt: new Date().toISOString(),
-    lastPingResponse: isStillVacant
-      ? `Verified vacant just now via 1-click Caretaker WhatsApp ping`
-      : `Marked occupied by caretaker at ${new Date().toLocaleTimeString()}`,
-  };
-
-  res.json({
-    success: true,
-    listing: listings[listingIndex],
-    message: isStillVacant
-      ? `Availability verified for ${listings[listingIndex].buildingName}.`
-      : `Unit marked as occupied. Phantom listing prevented.`,
+app.post('/api/listings/verify', (_req, res) => {
+  res.status(501).json({
+    error: 'Availability verification is unavailable until an authenticated caretaker confirmation workflow is connected.',
   });
 });
 
@@ -222,47 +201,13 @@ Return ONLY a valid JSON array of objects with this schema:
     console.error('Scraper engine error, using high-fidelity local intelligence:', error);
   }
 
-  // Fallback high-fidelity scraper response
-  const simulatedAgent: ScrapedAgentInsight = {
-    id: `scraped-${Date.now()}`,
-    agentName: `Caretaker Kariuki (${targetEstate} Desk)`,
-    agencyOrEstate: `${targetEstate} Caretaker Network`,
-    estateFocus: targetEstate,
-    phoneNumber: `+254 7${Math.floor(10000000 + Math.random() * 89999999)}`,
-    activeListingsCount: 4,
-    lastActivity: 'Live dispatch just now',
-    viewingFeeReported: 'KES 0 (Direct Caretaker - Free Viewing)',
-    reputation: 'Verified Direct Caretaker',
-    housesAssigned: [
-      {
-        building: `${targetEstate} Heights Plaza`,
-        location: `Main Stage Corridor, ${targetEstate}`,
-        vacancies: '1 unit (1-Bed @ KES 14,000) on 2nd Floor',
-        rentRangeKes: 'KES 13,500 - 15,000',
-        waterIntel: 'High capacity borehole + Kanjo, uninterrupted',
-        powerIntel: 'Personal KPLC token meter inside unit',
-      },
-      {
-        building: `Green View Courts`,
-        location: `300m off the tarmac`,
-        vacancies: '2 bedsitters ready for immediate occupation',
-        rentRangeKes: 'KES 9,000 - 10,500',
-        waterIntel: 'Borehole water treated',
-        powerIntel: 'Individual KPLC meter',
-      },
-    ],
-    scrapedAt: new Date().toISOString(),
-    notes: `Scraped from direct caretaker registry. 3 min walk to main matatu stage. Zero viewing fee.`,
-  };
-
-  scrapedAgents = [simulatedAgent, ...scrapedAgents];
-
-  res.json({
-    success: true,
-    scrapedCount: 1,
-    agents: [simulatedAgent],
+  // Search failure must not create fictional contacts or claim a verification.
+  res.status(503).json({
+    success: false,
+    scrapedCount: 0,
+    agents: [],
     targetEstate,
-    source: 'Nairobi Ground Agent Registry Dispatch',
+    error: 'Live agent sourcing is unavailable. No caretaker or vacancy has been verified.',
   });
 });
 
