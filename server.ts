@@ -15,10 +15,17 @@ const server = http.createServer(app);
 const PORT = 3000;
 
 app.use(express.json({ limit: '15mb' }));
+// Demo data and unauthenticated intake are disabled for real users until provenance and identity are implemented.
+if (process.env.NODE_ENV === 'production') {
+  app.use(['/api/scrape-agents', '/api/caretaker/intake'], (_req, res) => {
+    res.status(503).json({ error: 'Verified sourcing and caretaker intake are not available yet.' });
+  });
+}
+
 
 // In-memory data store for the live MVP session
-let listings: Listing[] = [...INITIAL_LISTINGS];
-let scrapedAgents: ScrapedAgentInsight[] = [...INITIAL_SCRAPED_AGENTS];
+let listings: Listing[] = process.env.NODE_ENV === 'production' ? [] : [...INITIAL_LISTINGS];
+let scrapedAgents: ScrapedAgentInsight[] = process.env.NODE_ENV === 'production' ? [] : [...INITIAL_SCRAPED_AGENTS];
 
 // Lazy initialization of Gemini Client
 let geminiClient: GoogleGenAI | null = null;
@@ -214,6 +221,13 @@ Return ONLY a valid JSON array of objects with this schema:
 // 6. Tenant Search & Advisory Agent ("Rental Concierge")
 app.post('/api/chat/concierge', async (req, res) => {
   const { messages, userPreferences } = req.body;
+  if (listings.length === 0) {
+    return res.status(503).json({
+      error: 'No verified listings are available. Advice and recommendations are unavailable until sources are confirmed.',
+      recommendedListingIds: [],
+      tcoComparison: [],
+    });
+  }
 
   try {
     const ai = getGeminiClient();
@@ -743,6 +757,10 @@ Return JSON:
 const wss = new WebSocketServer({ server, path: '/api/live' });
 
 wss.on('connection', async (clientWs: WebSocket) => {
+  if (process.env.NODE_ENV === 'production') {
+    clientWs.close(1008, 'Voice requires verified sign-in');
+    return;
+  }
   console.log('[Live Voice] Client connected to /api/live');
   const ai = getGeminiClient();
 
